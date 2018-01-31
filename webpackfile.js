@@ -11,7 +11,7 @@ function getEnv() {
 
 function ifDev(resolve,reject) {
   return getEnv() === 'development' ?
-  resolve:reject
+  resolve: reject
 }
 
 module.exports = {
@@ -70,6 +70,10 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|png|svg)$/,
+        loader: 'file-loader'
+      },
+      {
+        test: /\.(.woff2?|eot|ttf)$/,
         loader: 'url-loader?limit=1024'
       }
     ]
@@ -79,7 +83,7 @@ module.exports = {
       path: path.join(__dirname, 'assets')
     }),
     new ExtractTextPlugin({
-      filename: ifDev('application.css','application-[hash].css')
+      filename: ifDev('application.css', 'application-[hash].css')
     }),
     new webpack.EnvironmentPlugin({
       NODE_ENV: 'development'
@@ -92,9 +96,6 @@ module.exports = {
     new webpack.optimize.UglifyJsPlugin()
   ])),
   resolve: {
-    alias:{
-      vue: 'vue/dist/vue'
-    },
     extensions: ['.js','.vue','.css','.styl','.json']
   }
 }

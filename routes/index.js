@@ -1,10 +1,10 @@
-import App from '../views/App'
-import NotFound from '../views/pages/404.vue'
 
+import NotFound from '../views/pages/404.vue'
+import Home from '../views/pages/home.vue'
 export default [
   {
     path: '/',
-    component: App
+    component: Home
   },
   {
     path: '*',
