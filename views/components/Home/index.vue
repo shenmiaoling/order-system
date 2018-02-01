@@ -1,7 +1,10 @@
 <template>
   <div>
     <div class="home-bg">
-      <h1></h1>
+      <img :src="modelImg" class="medel-img"/>
+      <div class="title">海量精美模板可供挑选</div>
+      <div class="title">快速打造专业网站</div>
+      <button class="go-btn">前往体验</button>
     </div>
   </div>
 </template>
@@ -10,7 +13,7 @@ import './styles'
 export default {
   data() {
     return {
-      imgUrl1: '/assets/' + require('../../../images/bannerImg.jpeg')
+      modelImg: '/assets/' + require('../../../images/model.png')
     }
   }
 }
