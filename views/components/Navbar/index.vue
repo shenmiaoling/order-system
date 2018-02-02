@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="pc-nav">
+    <nav class="pc-nav" id="mynav">
       <div class="logo">LOGO</div>
       <ul class="nav-item">
         <li class="link-effect">首页</li>
@@ -35,7 +35,25 @@ export default {
   methods: {
     handleMenu () {
       this.open = !this.open
+    },
+    handleScroll () {
+      var myNav = document.getElementById('mynav');
+      if (window.scrollY > 0 ) {
+        myNav.classList.add("nav-colored");
+        myNav.classList.remove("nav-transparent");
+      }
+      else {
+          myNav.classList.add("nav-transparent");
+          myNav.classList.remove("nav-colored");
+      }
     }
+  },
+
+  created () {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 }
 </script>

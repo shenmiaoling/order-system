@@ -69,7 +69,7 @@ module.exports = {
         loader: 'vue-loader'
       },
       {
-        test: /\.(jpe?g|png|svg)$/,
+        test: /\.(jpe?g|png|svg|gif)$/,
         loader: 'file-loader'
       },
       {
