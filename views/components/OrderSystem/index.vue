@@ -1,5 +1,5 @@
 <template>
-  <div class="order-container">
+  <div class="order-container" id="order-el">
     <div class="order-img">
       <img :src="computerImg"/>
     </div>

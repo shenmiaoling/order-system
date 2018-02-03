@@ -1,5 +1,5 @@
 <template>
-  <div class="ad-container">
+  <div class="ad-container" id="ad-el">
     <div class="ad-intro">
       <div class="intro-title">广告跟踪服务流程</div>
       <p>精确跟踪地域 / 时间 / 媒体 / 频道 / 关键词 / 广告位置等</p>

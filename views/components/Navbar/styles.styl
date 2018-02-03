@@ -15,6 +15,7 @@ ul
   display: inline-block
   margin-right: 5rem
   padding: 0.5rem 1.8125rem
+  cursor: pointer
 
 .pc-nav
   padding: 1.375rem 2.1875rem
@@ -26,6 +27,7 @@ ul
   background-color: rgba(255,255,255,0)
   color: #fff
   font-size: 1.25rem
+  z-index: 2
 
 .pc-nav .link-effect
   border: 1px solid #fff
@@ -39,21 +41,27 @@ ul
   right: 0
   border: 1px solid #ffffff
   display: none
+  height: 50px
+  z-index: 2
+
+.mobile-item .link-effect
+  background-color: rgba(236,240,241,0.38)
 
 .home-icon
   text-align: right
   color: #ffffff
-  padding: 20px
-  font-size: 3.125rem!important
+  font-size: 20px!important
+  padding-top: 15px
+  padding-right: 15px
 
 .mobile-item .nav-item
-  background-color: rgba(52,73,94,0.9)
+  background-color: rgba(52,73,94,1)
   height: 100vh
   margin: 0
   text-align: center
-  padding: 20px
-  position: absolute
-  top: 75px
+  padding: 20px 0
+  position: fixed
+  top: 50px
   left: 0
   right: 0
 
@@ -66,9 +74,13 @@ ul
   background-color: rgba(0,0,0,0)
 
 .mobile-item .nav-item li
-  line-height: 4
-  font-size: 40px
+  line-height: 3
+  font-size: 1.25rem
   color: #ffffff
+
+.mobile-nav-colored
+  background-color: #bde6f8
+  transition: background-color 0.5s ease
 
 @media (max-width: 1400px)
 
