@@ -4,7 +4,7 @@
       <img :src="computerImg"/>
     </div>
     <div class="order-intro">
-      <div class="order-title">一站式便捷服务</div>
+      <div class="order-title">订单系统</div>
       <div class="sub-title">3D立体化订单系统</div>
       <p>收集订单用户的具体信息，并提供在线订单处理功能，从网民下单开始，到快递面单在线打印。一站式便捷服务，提供在线金算盘功能，可以直接在线核算成本。</p>
       <div class="sub-title">收集每个订单的信息来源</div>
@@ -17,7 +17,7 @@ import './styles'
 export default {
   data() {
     return {
-      computerImg: '/assets/' + require('../../../images/computer.gif')
+      computerImg: '/assets/' + require('../../../images/mac.png')
     }
   }
 }

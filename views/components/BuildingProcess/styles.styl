@@ -52,6 +52,10 @@
   color: #797979
   padding: 30px 38px
 
+.mb-card-container
+  margin-top: 2.375rem
+  display: none
+
 .mb-card-content
   border-radius: 8px
   background-color: #ffffff
@@ -60,16 +64,26 @@
   align-items: center
   justify-content: center
   padding: 15px
-  
+  margin-bottom: 2.375rem
+
 .mb-step-title
   display: inline-block
   border-right: 1px solid #c0c0c0
+  text-align: right
+  flex: 1
+  padding-right: 10px
 
+.mb-card-right
+  flex: 6
+  
 @media (max-width: 1300px)
   .building-process
     padding: 4.375rem 5.625rem
   .card-container
     display: none
+  .mb-card-container
+    display: block
+
 @media (max-width: 415px)
   .building-process
     padding: 2.375rem 2.625rem
