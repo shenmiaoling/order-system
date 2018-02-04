@@ -1,5 +1,5 @@
 .defense
-  background-image: linear-gradient(to bottom, #d3eefb, #ffffff)
+  background-image: linear-gradient(to bottom, #d3eefb 0%, #ffffff 50%)
   padding: 10.9375rem 3.5625rem
 
 .defense .title
@@ -42,17 +42,17 @@
   font-size: 2.5rem
   color: #f5bf39
 
+.defense .enlarge
+  font-size: 3.4375rem
+
 .defense .enlarge1
   color: #BDE6F8
-  font-size: 3.4375rem
 
 .defense .enlarge2
   color: #fb574d
-  font-size: 3.4375rem
 
 .defense .enlarge3
   color: #f5bf39
-  font-size: 3.4375rem
 
 .defense-text
   font-size: 1.875rem
@@ -61,3 +61,48 @@
   text-align: left
   color: #8a8a8a
   padding: 0 20px
+
+@media (max-width: 768px)
+  .defense
+    padding: 4.375rem 5.625rem
+
+  .defense-container
+    display: block
+    padding-top: 4.375rem
+
+  .card-space
+    display: block
+    margin: 0 auto
+
+  .defense-card
+    margin-top: 0
+
+  .defense-card p
+    padding-bottom: 20px
+
+@media (max-width: 415px)
+  .defense
+    padding: 2.375rem 2.625rem
+
+  .defense .title
+    font-size: 1.5rem
+
+  .defense-container
+    padding-top: 2.375rem
+
+  .defense .title:after
+    width: 6.5rem
+    padding-top: 10px
+    border-bottom: 4px solid #71c7e0
+
+  .icon-tags
+    font-size: 20px!important
+
+  .defense-card p
+    padding-bottom: 20px
+
+  .defense .enlarge
+    font-size: 35px
+
+  .defense-text
+    font-size: 25px

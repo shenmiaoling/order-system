@@ -34,8 +34,11 @@
     padding: 4.375rem 5.625rem
 
   .order-img img
-    width: 100%
     padding: 4.25rem
+
+@media (max-width: 1300px)
+  .order-img img
+    padding: 3.25rem
 
 @media (max-width: 768px)
   .order-container
@@ -51,10 +54,19 @@
   .order-intro p
     font-size: 18px
 
+  .order-img img
+    padding: 1.25rem
 
 @media (max-width: 415px)
   .order-container
     padding: 20px
+    display: block
+
+  .order-img img
+    width: 80%
+
+  .order-img
+    text-align: center
 
   .order-container .order-title
     font-size: 23px

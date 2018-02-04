@@ -4,10 +4,10 @@
       <div class="logo">LOGO</div>
       <ul class="nav-item">
         <li v-scroll-to="'#home-el'" @click="selected = 1" v-bind:class="{'link-effect': selected == 1}">首页</li>
-        <li v-scroll-to="'#build-el'" @click="selected = 2" v-bind:class="{'link-effect': selected == 2}">网站建设</li>
-        <li v-scroll-to="'#ad-el'" @click="selected = 3" v-bind:class="{'link-effect': selected == 3}">广告跟踪</li>
-        <li v-scroll-to="'#order-el'" @click="selected = 4" v-bind:class="{'link-effect': selected == 4}">订单系统</li>
-        <li v-scroll-to="'#webpage-el'" @click="selected = 5" v-bind:class="{'link-effect': selected == 5}">网页防护</li>
+        <li v-scroll-to="{el:'#build-el',offset: -90}" @click="selected = 2" v-bind:class="{'link-effect': selected == 2}">网站建设</li>
+        <li v-scroll-to="{el:'#ad-el',offset: -90}" @click="selected = 3" v-bind:class="{'link-effect': selected == 3}">广告跟踪</li>
+        <li v-scroll-to="{el:'#order-el',offset: -90}" @click="selected = 4" v-bind:class="{'link-effect': selected == 4}">订单系统</li>
+        <li v-scroll-to="{el:'#webpage-el',offset: -90}" @click="selected = 5" v-bind:class="{'link-effect': selected == 5}">网页防护</li>
       </ul>
     </nav>
     <nav class="mobile-nav" id="my-mobile-nav">
@@ -16,10 +16,10 @@
     <div class="mobile-item" v-show="open">
       <ul class="nav-item">
         <li v-scroll-to="'#home-el'" @click="selected = 1,open=false" v-bind:class="{'link-effect': selected == 1}">首页</li>
-        <li v-scroll-to="'#build-el'" @click="selected = 2,open=false" v-bind:class="{'link-effect': selected == 2}">网站建设</li>
-        <li v-scroll-to="'#ad-el'" @click="selected = 3,open=false" v-bind:class="{'link-effect': selected == 3}">广告跟踪</li>
-        <li v-scroll-to="'#order-el'" @click="selected = 4,open=false" v-bind:class="{'link-effect': selected == 4}">订单系统</li>
-        <li v-scroll-to="'#webpage-el'" @click="selected = 5,open=false" v-bind:class="{'link-effect': selected == 5}">网页防护</li>
+        <li v-scroll-to="{el:'#build-el',offset: -50}" @click="selected = 2,open=false" v-bind:class="{'link-effect': selected == 2}">网站建设</li>
+        <li v-scroll-to="{el:'#ad-el',offset: -50}" @click="selected = 3,open=false" v-bind:class="{'link-effect': selected == 3}">广告跟踪</li>
+        <li v-scroll-to="{el:'#order-el',offset: -50}" @click="selected = 4,open=false" v-bind:class="{'link-effect': selected == 4}">订单系统</li>
+        <li v-scroll-to="{el:'#webpage-el',offset: -50}" @click="selected = 5,open=false" v-bind:class="{'link-effect': selected == 5}">网页防护</li>
       </ul>
     </div>
   </div>

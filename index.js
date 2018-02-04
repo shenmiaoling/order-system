@@ -14,7 +14,7 @@ const router = new Router({
 })
 
 router.beforeEach((to, from, next) => {
-  document.title = to.meta.title || 'owl'
+  document.title = to.meta.title || '订单系统'
   next()
 })
 new Vue({
