@@ -33,19 +33,9 @@ ul
   border: 1px solid #fff
   border-radius: 0.5rem
 
-.mobile-nav
-  background-color: rgba(255,255,255,0)
-  position: fixed
-  top: 0
-  left: 0
-  right: 0
-  border: 1px solid #ffffff
-  display: none
-  height: 50px
-  z-index: 2
-
-.mobile-item .link-effect
-  background-color: rgba(236,240,241,0.38)
+.nav-colored
+  transition: background-color 0.5s ease
+  background-color: rgba(0,0,0,0.54)
 
 .home-icon
   text-align: right
@@ -54,47 +44,25 @@ ul
   padding-top: 15px
   padding-right: 15px
 
-.mobile-item .nav-item
-  background-color: rgba(52,73,94,1)
-  height: 100vh
-  margin: 0
-  text-align: center
-  padding: 20px 0
-  position: fixed
-  top: 50px
-  left: 0
-  right: 0
-  z-index: 100
-
-.nav-colored
-  transition: background-color 0.5s ease
-  background-color: rgba(0,0,0,0.54)
-
-.nav-transparent
-  transition: background-color 0.5s ease;
-  background-color: rgba(0,0,0,0)
-
-.mobile-item .nav-item li
-  line-height: 3
-  font-size: 1.25rem
+.mobile-head
+  background-color: #000000
   color: #ffffff
+  padding: 15px
+  display: none
 
-.mobile-nav-colored
-  background-color: #71c7e0
-  transition: background-color 0.5s ease
+.phone-number
+  float: right
 
-@media (max-width: 1400px)
+.icon-phone
+  font-size: 20px!important
+  vertical-align: middle
 
-  .mobile-nav
-    display:block
+.phone-number a
+  color: #ffffff
+@media (max-width: 1300px)
 
   .pc-nav
     display: none
 
-// @media (min-width: 768px) and (max-width: 1024px)
-//
-//   .mobile-nav
-//     display:block
-//
-//   .pc-nav
-//     display: none
+  .mobile-head
+    display: block

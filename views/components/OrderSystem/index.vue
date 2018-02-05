@@ -17,7 +17,7 @@ import './styles'
 export default {
   data() {
     return {
-      computerImg: '/assets/' + require('../../../images/mac.png')
+      computerImg: '/assets/' + require('../../../images/computer.png')
     }
   }
 }
