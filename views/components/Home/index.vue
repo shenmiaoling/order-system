@@ -5,7 +5,9 @@
       <div class="title-content">
         <div class="title">海量精美模板可供挑选</div>
         <div class="title">快速打造专业网站</div>
-        <button class="go-btn">前往体验</button>
+        <div class="go-btn">
+          <a href="/user/login/index.html">前往体验</a>
+        </div>
       </div>
     </div>
     <div class="mb-menu">
@@ -43,10 +45,13 @@
       </div>
     </div>
     <div class="customer">
-      <a href="http://wpa.qq.com/msgrd?v=3&uin=2438537296&site=qq&menu=yes">
+      <a id="qq">
         <div class="iconfont icon-qq"></div>
         在线客服
       </a>
+      <div class="gototop" v-scroll-to="'#home-el'">
+        <span class="iconfont icon-top"></span>
+      </div>
     </div>
   </div>
 </template>

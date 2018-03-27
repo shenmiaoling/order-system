@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{{ name }}</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1.0, width=device-width">
-    <link rel="stylesheet" href="/assets/{{ index.css }}">
-    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_560691_22sx957uml4hd7vi.css
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1.0, width=device-width">
+  <link rel="stylesheet" href="/assets/{{ index.css }}">
+  <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_560691_cgh1xdokbzus1yvi.css
 ">
-  </head>
-  <body>
-    <div id="app">
-    </div>
-    <script src="/assets/{{ packages.js }}"></script>
-    <script src="/assets/{{ index.js }}"></script>
-  </body>
+</head>
+
+<body>
+  <div id="app">
+  </div>
+  <script src="/assets/{{ packages.js }}"></script>
+  <script src="/assets/{{ index.js }}"></script>
+  <script>
+    var phoneNumber = "13620215454";
+    var qq = "http://wpa.qq.com/msgrd?v=3&uin=2438537296&site=qq&menu=yes"
+    var footer = "2018 诺行网络科技有限公司";
+
+    document.getElementById("pnumber").innerHTML = phoneNumber;
+    var callLink = document.getElementById('call');
+    callLink.href = "tel:" + phoneNumber;
+    var QQLink = document.getElementById('qq');
+    QQLink.href = qq;
+    var footerInfo = document.getElementById('footerInfo');
+    footerInfo.innerHTML = footer
+    var logo = './images/logo6.png'
+    document.getElementById("pc-logo").src = logo
+    document.getElementById("mobile-logo").src = logo
+  </script>
+</body>
+
 </html>

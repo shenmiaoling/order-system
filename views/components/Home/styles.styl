@@ -18,8 +18,10 @@
   line-height: 1.8
 
 .go-btn
+  width: 11.25rem
+  display: block
+  margin: 0 auto
   margin-top: 0.625rem
-  padding: 0.25rem 4.8125rem
   border-radius: 0.5rem
   font-size: 1.875rem
   color: #ffffff
@@ -28,6 +30,9 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
   outline: none
   cursor: pointer
+
+.go-btn a
+  color: #ffffff
 
 .mb-menu
   display: none
@@ -74,13 +79,35 @@
   background-color: #71c7e0
   text-align: center
   color: #ffffff
-  padding: 10px
+  padding: 5px
 
 .icon-qq
   font-size: 30px!important
 
+.icon-top
+  font-size: 30px!important
+
 .customer a
   color: #ffffff
+
+.gototop
+  border-top: 1px dashed #ffffff
+  margin-top: 5px
+  padding-bottom: 5px
+@media (max-width: 1400px)
+  .medel-img
+    margin-bottom: 1rem
+    width: 25%
+
+  .home-bg .title
+    font-size: 1.58rem
+    line-height: 1.8
+
+  .go-btn
+    font-size: 1.58rem
+    margin-top: 0.625rem
+    padding: 0.25rem 0
+
 @media (max-width: 1300px)
 
   .home-bg
@@ -96,7 +123,6 @@
 
   .go-btn
     font-size: 1.2rem
-    padding: 0.3125rem 3.125rem
 
   .title-content
     position: relative
@@ -106,15 +132,10 @@
   .mb-menu
     display: flex
 
-@media (max-width: 1025px)
-  .medel-img
-    width: 50%
-    margin-bottom: 2.125rem
-
 @media (max-width: 415px)
   .home-bg .title
     font-size: 20px
 
   .go-btn
+    width: 7.5rem
     font-size: 18px
-    padding: 5px 25px

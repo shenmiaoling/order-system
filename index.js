@@ -13,10 +13,6 @@ const router = new Router({
   routes
 })
 
-router.beforeEach((to, from, next) => {
-  document.title = to.meta.title || '订单系统'
-  next()
-})
 new Vue({
   router,
   render(h) {

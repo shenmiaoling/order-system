@@ -1,7 +1,9 @@
 <template>
   <div>
     <nav class="pc-nav" id="mynav">
-      <div class="logo">LOGO</div>
+      <div class="logo">
+        <img id="pc-logo">
+      </div>
       <ul class="nav-item">
         <li v-scroll-to="'#home-el'" @click="selected = 1" v-bind:class="{'link-effect': selected == 1}">首页</li>
         <li v-scroll-to="{el:'#build-el',offset: -90}" @click="selected = 2" v-bind:class="{'link-effect': selected == 2}">网站建设</li>
@@ -11,13 +13,13 @@
       </ul>
     </nav>
     <header class="mobile-head">
-      <span>LOGO</span>
-      <span class="phone-number">
+      <img id="mobile-logo"/>
+      <div class="phone-number">
         <span class="iconfont icon-phone"></span>
-        <a href="tel:13688888888">
-          <span>13688888888</span>
+        <a id="call">
+          <span id="pnumber"></span>
         </a>
-      </span>
+      </div>
     </header>
   </div>
 </template>
@@ -27,8 +29,7 @@ export default {
   data(){
     return {
       open: false,
-      selected: 1
-    }
+      selected: 1    }
   },
   methods: {
     handleMenu () {

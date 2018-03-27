@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div>Copyright © 2018 猫头鹰工作室 All Rights Reserved.</div>
+    <div>Copyright © <span id="footerInfo"></span> All Rights Reserved.</div>
   </footer>
 </template>
 <script>
