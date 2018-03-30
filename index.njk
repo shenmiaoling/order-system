@@ -18,14 +18,16 @@
   <script>
     var phoneNumber = "13620215454";
     var qq = "http://wpa.qq.com/msgrd?v=3&uin=2438537296&site=qq&menu=yes"
-    var footer = "2018 诺行网络科技有限公司";
-
+    var footer = "诺行网络科技有限公司";
+    var licensing = "粤ICP备18032739号-1 "
     document.getElementById("pnumber").innerHTML = phoneNumber;
     var callLink = document.getElementById('call');
     callLink.href = "tel:" + phoneNumber;
     var QQLink = document.getElementById('qq');
     QQLink.href = qq;
     var footerInfo = document.getElementById('footerInfo');
+    var licensingInfo = document.getElementById('licensing');
+    licensingInfo.innerHTML = licensing;
     footerInfo.innerHTML = footer
     var logo = './images/logo6.png'
     document.getElementById("pc-logo").src = logo

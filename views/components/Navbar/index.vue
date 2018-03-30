@@ -29,7 +29,8 @@ export default {
   data(){
     return {
       open: false,
-      selected: 1    }
+      selected: 1
+    }
   },
   methods: {
     handleMenu () {
