@@ -1,4 +1,3 @@
-
 import NotFound from '../views/pages/404.vue'
 import Home from '../views/pages/home.vue'
 export default [
@@ -9,6 +8,8 @@ export default [
   {
     path: '*',
     component: NotFound,
-    meta: { title: 'NotFound' }
+    meta: {
+      title: 'NotFound'
+    }
   }
 ]
